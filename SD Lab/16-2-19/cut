@@ -1,0 +1,85 @@
+student@T28:~/ajce/mca/rmca$ cut -c5 m.txt
+3
+6
+4
+7
+student@T28:~/ajce/mca/rmca$ cut -c1 m.txt
+1
+4
+1
+4
+student@T28:~/ajce/mca/rmca$ cut -c2 m.txt
+ 
+ 
+ 
+ 
+student@T28:~/ajce/mca/rmca$ cut -c2,4,5 m.txt
+  3
+  6
+  4
+  7
+student@T28:~/ajce/mca/rmca$ cut -b m.txt
+cut: invalid byte/character position ‘m.txt’
+Try 'cut --help' for more information.
+student@T28:~/ajce/mca/rmca$ man cut
+student@T28:~/ajce/mca/rmca$ cut -b2 m.txt
+ 
+ 
+ 
+ 
+student@T28:~/ajce/mca/rmca$ cut -b5 m.txt
+3
+6
+4
+7
+student@T28:~/ajce/mca/rmca$ cut -b5,3,7 m.txt
+234
+567
+245
+678
+student@T28:~/ajce/mca/rmca$ cut -f3 m.txt
+1 2 3 4 5 6 7
+4 5 6 7 8 9 9
+1 2 4 5 6 7 7
+4 6 7 8 9 0 0
+student@T28:~/ajce/mca/rmca$ cut -f3,1,5 m.txt
+1 2 3 4 5 6 7
+4 5 6 7 8 9 9
+1 2 4 5 6 7 7
+4 6 7 8 9 0 0
+student@T28:~/ajce/mca/rmca$ cut -f m.txt
+cut: invalid field value ‘m.txt’
+Try 'cut --help' for more information.
+student@T28:~/ajce/mca/rmca$ cut -f2 m.txt
+1 2 3 4 5 6 7
+4 5 6 7 8 9 9
+1 2 4 5 6 7 7
+4 6 7 8 9 0 0
+student@T28:~/ajce/mca/rmca$ ma cut
+ma: command not found
+student@T28:~/ajce/mca/rmca$ man cut
+student@T28:~/ajce/mca/rmca$ cat > s.txt
+q 	w	e
+s	d       L
+x	s	g
+^C
+student@T28:~/ajce/mca/rmca$ cut -f2 m.txt
+1 2 3 4 5 6 7
+4 5 6 7 8 9 9
+1 2 4 5 6 7 7
+4 6 7 8 9 0 0
+student@T28:~/ajce/mca/rmca$ cut -f2 s.txt
+w
+d
+s
+student@T28:~/ajce/mca/rmca$ cut -f1 s.txt
+q
+s
+x
+student@T28:~/ajce/mca/rmca$ cut -f3 s.txt
+e
+L
+g
+student@T28:~/ajce/mca/rmca$ man cut
+student@T28:~/ajce/mca/rmca$ 
+

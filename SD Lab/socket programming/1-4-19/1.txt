@@ -1,0 +1,14 @@
+student@T28:~$ cd meenusd
+student@T28:~/meenusd$ cd 1-4-19
+student@T28:~/meenusd/1-4-19$ java Client
+Client connected to the server
+to Start the chat, type message and press Enter key
+hai
+server:>hello
+how r u
+server:>by
+by
+server:>bye
+bye
+student@T28:~/meenusd/1-4-19$ 
+

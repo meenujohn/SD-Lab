@@ -1,0 +1,114 @@
+student@T28:~$ mkdir ajce
+student@T28:~$ cd ajce
+student@T28:~/ajce$ mkdir mca
+student@T28:~/ajce$ cd mca
+student@T28:~/ajce/mca$ mkdir rmca
+student@T28:~/ajce/mca$ mkdir lemca
+student@T28:~/ajce/mca$ mkdir intmca
+student@T28:~/ajce/mca$ cd rmca
+student@T28:~/ajce/mca/rmca$ cd ..
+student@T28:~/ajce/mca$ pwd
+/home/student/ajce/mca
+student@T28:~/ajce/mca$ cd /
+student@T28:/$ cd ~
+student@T28:~$ cd ajce
+student@T28:~/ajce$ 
+student@T28:~/ajce$ cd mca
+student@T28:~/ajce/mca$ pwd
+/home/student/ajce/mca
+student@T28:~/ajce/mca$ ls
+intmca  lemca  rmca
+student@T28:~/ajce/mca$ ls -l
+total 12
+drwxr-xr-x 2 student student 4096 Jan 31 14:34 intmca
+drwxr-xr-x 2 student student 4096 Jan 31 14:34 lemca
+drwxr-xr-x 2 student student 4096 Jan 31 14:34 rmca
+student@T28:~/ajce/mca$ ls ..
+mca
+student@T28:~/ajce/mca$ ls /
+bin    etc             lib         mnt   run   stage2.img  var
+boot   home            lib64       opt   sbin  sys         vmlinuz
+cdrom  initrd.img      lost+found  proc  snap  tmp         vmlinuz.old
+dev    initrd.img.old  media       root  srv   usr
+student@T28:~/ajce/mca$ ls ~
+ajce     Documents  examples.desktop  Music     Public  Templates        Videos
+Desktop  Downloads  jilcy             Pictures  ruby    validation.html
+student@T28:~/ajce/mca$ ls -t
+intmca  lemca  rmca
+student@T28:~/ajce/mca$ ls -a
+.  ..  intmca  lemca  rmca
+student@T28:~/ajce/mca$ ls -la
+total 20
+drwxr-xr-x 5 student student 4096 Jan 31 14:34 .
+drwxr-xr-x 3 student student 4096 Jan 31 14:34 ..
+drwxr-xr-x 2 student student 4096 Jan 31 14:34 intmca
+drwxr-xr-x 2 student student 4096 Jan 31 14:34 lemca
+drwxr-xr-x 2 student student 4096 Jan 31 14:34 rmca
+student@T28:~/ajce/mca$ ls -s
+total 12
+4 intmca  4 lemca  4 rmca
+student@T28:~/ajce/mca$ ls -S
+intmca  lemca  rmca
+student@T28:~/ajce/mca$ ls ajce/mca
+ls: cannot access 'ajce/mca': No such file or directory
+student@T28:~/ajce/mca$ ls mca/rmca
+ls: cannot access 'mca/rmca': No such file or directory
+student@T28:~/ajce/mca$ cd ..
+student@T28:~/ajce$ ajce/mca
+bash: ajce/mca: No such file or directory
+student@T28:~/ajce$ ls mca
+intmca  lemca  rmca
+student@T28:~/ajce$ cd mca
+student@T28:~/ajce/mca$ ls rmca
+student@T28:~/ajce/mca$ cd ..
+student@T28:~/ajce$ cd ..
+student@T28:~$ ls ajce/mca
+intmca  lemca  rmca
+student@T28:~$ ls -s
+total 60
+ 4 ajce        4 Downloads          4 Music      4 ruby              4 Videos
+ 4 Desktop    12 examples.desktop   4 Pictures   4 Templates
+ 4 Documents   4 jilcy              4 Public     4 validation.html
+student@T28:~$ cd ajce
+student@T28:~/ajce$ cd mca
+student@T28:~/ajce/mca$ ls -s
+total 12
+4 intmca  4 lemca  4 rmca
+student@T28:~/ajce/mca$ ls *
+intmca:
+
+lemca:
+
+rmca:
+student@T28:~/ajce/mca$ cd ..
+student@T28:~/ajce$ ls *
+intmca  lemca  rmca
+student@T28:~/ajce$ cd mca
+student@T28:~/ajce/mca$ cd rmca
+student@T28:~/ajce/mca/rmca$ ls *
+ls: cannot access '*': No such file or directory
+student@T28:~/ajce/mca/rmca$ cd ..
+student@T28:~/ajce/mca$ ls -R
+.:
+intmca  lemca  rmca
+
+./intmca:
+
+./lemca:
+
+./rmca:
+student@T28:~/ajce/mca$ ls >out.txt
+student@T28:~/ajce/mca$ ls -d */
+intmca/  lemca/  rmca/
+student@T28:~/ajce/mca$ ls -d SPWD/*
+ls: cannot access 'SPWD/*': No such file or directory
+student@T28:~/ajce/mca$ ls -d S PWD/*
+ls: cannot access 'S': No such file or directory
+ls: cannot access 'PWD/*': No such file or directory
+student@T28:~/ajce/mca$ ls -d S pwd/*
+ls: cannot access 'S': No such file or directory
+ls: cannot access 'pwd/*': No such file or directory
+student@T28:~/ajce/mca$ man ls
+student@T28:~/ajce/mca$ ^C
+student@T28:~/ajce/mca$ 
+

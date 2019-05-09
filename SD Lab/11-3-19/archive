@@ -1,0 +1,31 @@
+student@T28:~$ cd ajce
+student@T28:~/ajce$ cd mca
+student@T28:~/ajce/mca$ tar -czvf f123.tar.gz rmca
+rmca/
+rmca/sd.txt
+rmca/se.txt
+rmca/r.txt
+rmca/f2.txt~
+rmca/file.txt
+rmca/g.txt
+rmca/f2.txt
+rmca/f3.txt
+rmca/f1.txt
+student@T28:~/ajce/mca$ ls
+asd  f123.tar.gz  intmca  rmca
+student@T28:~/ajce/mca$ cd linux
+student@T28:~/ajce/mca/linux$ tar -xzvf f123.tar.gz 
+rmca/
+rmca/sd.txt
+rmca/se.txt
+rmca/r.txt
+rmca/f2.txt~
+rmca/file.txt
+rmca/g.txt
+rmca/f2.txt
+rmca/f3.txt
+rmca/f1.txt
+student@T28:~/ajce/mca/linux$ ls
+f123.tar.gz  rmca
+student@T28:~/ajce/mca/linux$ 
+

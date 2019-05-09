@@ -1,0 +1,760 @@
+student@T28:~$ cd ajce
+student@T28:~/ajce$ cd mca
+student@T28:~/ajce/mca$  cd rmca
+student@T28:~/ajce/mca/rmca$ cat > f1.txt
+meenu	john
+anju	jacob
+manu	john
+^C
+student@T28:~/ajce/mca/rmca$ cat >f2.txt
+kottayam
+kollam	KOZHIKOD
+thiruvalla
+ernakulam
+^C
+student@T28:~/ajce/mca/rmca$ cat > f3.txt
+1	2       5
+2	5 4
+5	7 8 9 5
+^C
+student@T28:~/ajce/mca/rmca$ paste f1.txt f2.txt
+meenu	john	kottayam
+anju	jacob	kollam	KOZHIKOD
+manu	john	thiruvalla
+	ernakulam
+student@T28:~/ajce/mca/rmca$ paste f1.txt f2.txt f3.txt
+meenu	john	kottayam	1	2	5
+anju	jacob	kollam	KOZHIKOD	2	5 4
+manu	john	thiruvalla	5	7 8 9 5
+	ernakulam	
+student@T28:~/ajce/mca/rmca$ paste -d "|" f1.txt f2.txt 
+meenu	john|kottayam
+anju	jacob|kollam	KOZHIKOD
+manu	john|thiruvalla
+|ernakulam
+student@T28:~/ajce/mca/rmca$ paste -s  f1.txt f2.txt 
+meenu	john	anju	jacob	manu	john
+kottayam	kollam	KOZHIKOD	thiruvalla	ernakulam
+student@T28:~/ajce/mca/rmca$ paste -s-d ","  f1.txt f2.txt 
+paste: invalid option -- '-'
+Try 'paste --help' for more information.
+student@T28:~/ajce/mca/rmca$ paste -s-d  ","  f1.txt f2.txt 
+paste: invalid option -- '-'
+Try 'paste --help' for more information.student@T28:~$ cd ajce
+student@T28:~/ajce$ cd mca
+student@T28:~/ajce/mca$  cd rmca
+student@T28:~/ajce/mca/rmca$ cat > f1.txt
+meenu	john
+anju	jacob
+manu	john
+^C
+student@T28:~/ajce/mca/rmca$ cat >f2.txt
+kottayam
+kollam	KOZHIKOD
+thiruvalla
+ernakulam
+^C
+student@T28:~/ajce/mca/rmca$ cat > f3.txt
+1	2       5
+2	5 4
+5	7 8 9 5
+^C
+student@T28:~/ajce/mca/rmca$ paste f1.txt f2.txt
+meenu	john	kottayam
+anju	jacob	kollam	KOZHIKOD
+manu	john	thiruvalla
+	ernakulam
+student@T28:~/ajce/mca/rmca$ paste f1.txt f2.txt f3.txt
+meenu	john	kottayam	1	2	5
+anju	jacob	kollam	KOZHIKOD	2	5 4
+manu	john	thiruvalla	5	7 8 9 5
+	ernakulam	
+student@T28:~/ajce/mca/rmca$ paste -d "|" f1.txt f2.txt 
+meenu	john|kottayam
+anju	jacob|kollam	KOZHIKOD
+manu	john|thiruvalla
+|ernakulam
+student@T28:~/ajce/mca/rmca$ paste -s  f1.txt f2.txt 
+meenu	john	anju	jacob	manu	john
+kottayam	kollam	KOZHIKOD	thiruvalla	ernakulam
+student@T28:~/ajce/mca/rmca$ paste -s-d ","  f1.txt f2.txt 
+paste: invalid option -- '-'
+Try 'paste --help' for more information.
+student@T28:~/ajce/mca/rmca$ paste -s-d  ","  f1.txt f2.txt 
+paste: invalid option -- '-'
+Try 'paste --help' for more information.
+student@T28:~/ajce/mca/rmca$ paste -s-d  ":"  f1.txt f2.txt 
+paste: invalid option -- '-'
+Try 'paste --help' for more information.
+student@T28:~/ajce/mca/rmca$ paste -s -d  ":"  f1.txt f2.txt 
+meenu	john:anju	jacob:manu	john
+kottayam:kollam	KOZHIKOD:thiruvalla:ernakulam
+student@T28:~/ajce/mca/rmca$ cut f1 | paste --
+cut: you must specify a list of bytes, characters, or fields
+Try 'cut --help' for more information.
+student@T28:~/ajce/mca/rmca$ cat f1 | paste --
+cat: f1: No such file or directory
+student@T28:~/ajce/mca/rmca$ cat f1.txt | paste --
+meenu	john
+anju	jacob
+manu	john
+student@T28:~/ajce/mca/rmca$  paste --- <f1.txt
+paste: unrecognized option '---'
+Try 'paste --help' for more information.
+student@T28:~/ajce/mca/rmca$ paste --- < f1.txt
+paste: unrecognized option '---'
+Try 'paste --help' for more information.
+student@T28:~/ajce/mca/rmca$ paste ---< f1.txt
+paste: unrecognized option '---'
+Try 'paste --help' for more information.
+student@T28:~/ajce/mca/rmca$ paste --< f1.txt
+meenu	john
+anju	jacob
+manu	john
+student@T28:~/ajce/mca/rmca$ paste - - -< f1.txt
+meenu	john	anju	jacob	manu	john
+student@T28:~/ajce/mca/rmca$ cat f1.txt 
+meenu	john
+anju	jacob
+manu	john
+student@T28:~/ajce/mca/rmca$ cat f1.txt
+meenu	
+anju
+ammu 
+appu
+annu
+akku	
+student@T28:~/ajce/mca/rmca$ paste - - -< f1.txt
+meenu		anju	ammu 
+appu	annu	akku	
+student@T28:~/ajce/mca/rmca$ paste - - - < f1.txt
+meenu		anju	ammu 
+appu	annu	akku	
+student@T28:~/ajce/mca/rmca$ paste - - - < f1.txt
+meenu	anju	ammu 
+appu	annu	akku	
+student@T28:~/ajce/mca/rmca$ paste - -  < f1.txt
+meenu	anju
+ammu 	appu
+annu	akku	
+student@T28:~/ajce/mca/rmca$ ^C
+student@T28:~/ajce/mca/rmca$ cat f1.txt | paste --
+meenu
+anju
+ammu 
+appu
+annu
+akku	
+student@T28:~/ajce/mca/rmca$ cat f1.txt | paste --
+meenu
+anju
+ammu 
+appu
+annu
+akku	
+student@T28:~/ajce/mca/rmca$ cat f1.txt | paste - -
+meenu	anju
+ammu 	appu
+annu	akku	
+student@T28:~/ajce/mca/rmca$ paste -d "|," f1.txt f2.txt 
+meenu|kottayam
+anju|kollam	KOZHIKOD
+ammu |thiruvalla
+appu|ernakulam
+annu|
+akku	|
+student@T28:~/ajce/mca/rmca$ paste -d "|," f1.txt f2.txt f3.txt
+meenu|kottayam,1	2	5
+anju|kollam	KOZHIKOD,2	5 4
+ammu |thiruvalla,5	7 8 9 5
+appu|ernakulam,
+annu|,
+akku	|,
+student@T28:~/ajce/mca/rmca$ 
+student@T28:~$ cd ajce
+student@T28:~/ajce$ cd mca
+student@T28:~/ajce/mca$  cd rmca
+student@T28:~/ajce/mca/rmca$ cat > f1.txt
+meenu	john
+anju	jacob
+manu	john
+^C
+student@T28:~/ajce/mca/rmca$ cat >f2.txt
+kottayam
+kollam	KOZHIKOD
+thiruvalla
+ernakulam
+^C
+student@T28:~/ajce/mca/rmca$ cat > f3.txt
+1	2       5
+2	5 4
+5	7 8 9 5
+^C
+student@T28:~/ajce/mca/rmca$ paste f1.txt f2.txt
+meenu	john	kottayam
+anju	jacob	kollam	KOZHIKOD
+manu	john	thiruvalla
+	ernakulam
+student@T28:~/ajce/mca/rmca$ paste f1.txt f2.txt f3.txt
+meenu	john	kottayam	1	2	5
+anju	jacob	kollam	KOZHIKOD	2	5 4
+manu	john	thiruvalla	5	7 8 9 5
+	ernakulam	
+student@T28:~/ajce/mca/rmca$ paste -d "|" f1.txt f2.txt 
+meenu	john|kottayam
+anju	jacob|kollam	KOZHIKOD
+manu	john|thiruvalla
+|ernakulam
+student@T28:~/ajce/mca/rmca$ paste -s  f1.txt f2.txt 
+meenu	john	anju	jacob	manu	john
+kottayam	kollam	KOZHIKOD	thiruvalla	ernakulam
+student@T28:~/ajce/mca/rmca$ paste -s-d ","  f1.txt f2.txt 
+paste: invalid option -- '-'
+Try 'paste --help' for more information.
+student@T28:~/ajce/mca/rmca$ paste -s-d  ","  f1.txt f2.txt 
+paste: invalid option -- '-'
+Try 'paste --help' for more information.
+student@T28:~/ajce/mca/rmca$ paste -s-d  ":"  f1.txt f2.txt 
+paste: invalid option -- '-'
+Try 'paste --help' for more information.
+student@T28:~/ajce/mca/rmca$ paste -s -d  ":"  f1.txt f2.txt 
+meenu	john:anju	jacob:manu	john
+kottayam:kollam	KOZHIKOD:thiruvalla:ernakulam
+student@T28:~/ajce/mca/rmca$ cut f1 | paste --
+cut: you must specify a list of bytes, characters, or fields
+Try 'cut --help' for more information.
+student@T28:~/ajce/mca/rmca$ cat f1 | paste --
+cat: f1: No such file or directory
+student@T28:~/ajce/mca/rmca$ cat f1.txt | paste --
+meenu	john
+anju	jacob
+manu	john
+student@T28:~/ajce/mca/rmca$  paste --- <f1.txt
+paste: unrecognized option '---'
+Try 'paste --help' for more information.
+student@T28:~/ajce/mca/rmca$ paste --- < f1.txt
+paste: unrecognized option '---'
+Try 'paste --help' for more information.
+student@T28:~/ajce/mca/rmca$ paste ---< f1.txt
+paste: unrecognized option '---'
+Try 'paste --help' for more information.
+student@T28:~/ajce/mca/rmca$ paste --< f1.txt
+meenu	john
+anju	jacob
+manu	john
+student@T28:~/ajce/mca/rmca$ paste - - -< f1.txt
+meenu	john	anju	jacob	manu	john
+student@T28:~/ajce/mca/rmca$ cat f1.txt 
+meenu	john
+anju	jacob
+manu	john
+student@T28:~/ajce/mca/rmca$ cat f1.txt
+meenu	
+anju
+ammu 
+appu
+annu
+akku	
+student@T28:~/ajce/mca/rmca$ paste - - -< f1.txt
+meenu		anju	ammu 
+appu	annu	akku	
+student@T28:~/ajce/mca/rmca$ paste - - - < f1.txt
+meenu		anju	ammu 
+appu	annu	akku	
+student@T28:~/ajce/mca/rmca$ paste - - - < f1.txt
+meenu	anju	ammu 
+appu	annu	akku	
+student@T28:~/ajce/mca/rmca$ paste - -  < f1.txt
+meenu	anju
+ammu 	appu
+annu	akku	
+student@T28:~/ajce/mca/rmca$ ^C
+student@T28:~/ajce/mca/rmca$ cat f1.txt | paste --
+meenu
+anju
+ammu 
+appu
+annu
+akku	
+student@T28:~/ajce/mca/rmca$ cat f1.txt | paste --
+meenu
+anju
+ammu 
+appu
+annu
+akku	
+student@T28:~/ajce/mca/rmca$ cat f1.txt | paste - -
+meenu	anju
+ammu 	appu
+annu	akku	
+student@T28:~/ajce/mca/rmca$ paste -d "|," f1.txt f2.txt 
+meenu|kottayam
+anju|kollam	KOZHIKOD
+ammu |thiruvalla
+appu|ernakulam
+annu|
+akku	|
+student@T28:~/ajce/mca/rmca$ paste -d "|," f1.txt f2.txt f3.txt
+meenu|kottayam,1	2	5
+anju|kollam	KOZHIKOD,2	5 4
+ammu |thiruvalla,5	7 8 9 5
+appu|ernakulam,
+annu|,
+akku	|,
+student@T28:~/ajce/mca/rmca$ 
+
+student@T28:~/ajce/mca/rmca$ paste -s-d  ":"  f1.txt f2.txt 
+paste: invalid option -- '-'
+Try 'paste --help' for more information.
+student@T28:~/ajce/mca/rmca$ paste -s -d  ":"  f1.txt f2.txt 
+meenu	john:anju	jacob:manu	john
+kottayam:kollam	KOZHIKOD:thiruvalla:ernakulam
+student@T28:~/ajce/mca/rmca$ cut f1 | paste --
+cut: you must specify a list of bytes, characters, or fields
+Try 'cut --help' for more information.
+student@T28:~/ajce/mca/rmca$ cat f1 | paste --
+cat: f1: No such file or directory
+student@T28:~/ajce/mca/rmca$ cat f1.txt | paste --
+meenu	john
+anju	jacob
+manu	john
+student@T28:~/ajce/mca/rmca$  paste --- <f1.txt
+paste: unrecognized option '---'
+Try 'paste --help' for more information.
+student@T28:~/ajce/mca/rmca$ paste --- < f1.txt
+paste: unrecognized option '---'
+Try 'paste --help' for more information.
+student@T28:~/ajce/mca/rmca$ paste ---< f1.txt
+paste: unrecognized option '---'
+Try 'paste --help' for more information.
+student@T28:~/ajce/mca/rmca$ paste --< f1.txt
+meenu	john
+anju	jacob
+manu	john
+student@T28:~/ajce/mca/rmca$ paste - - -< f1.txt
+meenu	john	anju	jacob	manu	john
+student@T28:~/ajce/mca/rmca$ cat f1.txt 
+meenu	john
+anju	jacob
+manu	john
+student@T28:~/ajce/mca/rmca$ cat f1.txt
+meenu	
+anju
+ammu 
+appu
+annu
+akku	
+student@T28:~/ajce/mca/rmca$ paste - - -< f1.txt
+meenu		anju	ammu 
+appu	annu	akku	
+student@T28:~/ajce/mca/rmca$ paste - - - < f1.txt
+meenu		anju	ammu 
+appu	annu	akku	
+student@T28:~/ajce/mca/rmca$ paste - - - < f1.txt
+meenu	anju	ammu 
+appu	annu	akku	
+student@T28:~/ajce/mca/rmca$ paste - -  < f1.txt
+meenu	anju
+ammu 	appu
+annu	akku	
+student@T28:~/ajce/mca/rmca$ ^C
+student@T28:~/ajce/mca/rmca$ cat f1.txt | paste --
+meenu
+anju
+ammu 
+appu
+annu
+akku	
+student@T28:~/ajce/mca/rmca$ cat f1.txt | paste --student@T28:~$ cd ajce
+student@T28:~/ajce$ cd mca
+student@T28:~/ajce/mca$  cd rmca
+student@T28:~/ajce/mca/rmca$ cat > f1.txt
+meenu	john
+anju	jacob
+manu	john
+^C
+student@T28:~/ajce/mca/rmca$ cat >f2.txt
+kottayam
+kollam	KOZHIKOD
+thiruvalla
+ernakulam
+^C
+student@T28:~/ajce/mca/rmca$ cat > f3.txt
+1	2       5
+2	5 4
+5	7 8 9 5
+^C
+student@T28:~/ajce/mca/rmca$ paste f1.txt f2.txt
+meenu	john	kottayam
+anju	jacob	kollam	KOZHIKOD
+manu	john	thiruvalla
+	ernakulam
+student@T28:~/ajce/mca/rmca$ paste f1.txt f2.txt f3.txt
+meenu	john	kottayam	1	2	5
+anju	jacob	kollam	KOZHIKOD	2	5 4
+manu	john	thiruvalla	5	7 8 9 5
+	ernakulam	
+student@T28:~/ajce/mca/rmca$ paste -d "|" f1.txt f2.txt 
+meenu	john|kottayam
+anju	jacob|kollam	KOZHIKOD
+manu	john|thiruvalla
+|ernakulam
+student@T28:~/ajce/mca/rmca$ paste -s  f1.txt f2.txt 
+meenu	john	anju	jacob	manu	john
+kottayam	kollam	KOZHIKOD	thiruvalla	ernakulam
+student@T28:~/ajce/mca/rmca$ paste -s-d ","  f1.txt f2.txt 
+paste: invalid option -- '-'
+Try 'paste --help' for more information.
+student@T28:~/ajce/mca/rmca$ paste -s-d  ","  f1.txt f2.txt 
+paste: invalid option -- '-'
+Try 'paste --help' for more information.
+student@T28:~/ajce/mca/rmca$ paste -s-d  ":"  f1.txt f2.txt 
+paste: invalid option -- '-'
+Try 'paste --help' for more information.
+student@T28:~/ajce/mca/rmca$ paste -s -d  ":"  f1.txt f2.txt 
+meenu	john:anju	jacob:manu	john
+kottayam:kollam	KOZHIKOD:thiruvalla:ernakulam
+student@T28:~/ajce/mca/rmca$ cut f1 | paste --
+cut: you must specify a list of bytes, characters, or fields
+Try 'cut --help' for more information.
+student@T28:~/ajce/mca/rmca$ cat f1 | paste --
+cat: f1: No such file or directory
+student@T28:~/ajce/mca/rmca$ cat f1.txt | paste --
+meenu	john
+anju	jacob
+manu	john
+student@T28:~/ajce/mca/rmca$  paste --- <f1.txt
+paste: unrecognized option '---'
+Try 'paste --help' for more information.
+student@T28:~/ajce/mca/rmca$ paste --- < f1.txt
+paste: unrecognized option '---'
+Try 'paste --help' for more information.
+student@T28:~/ajce/mca/rmca$ paste ---< f1.txt
+paste: unrecognized option '---'
+Try 'paste --help' for more information.
+student@T28:~/ajce/mca/rmca$ paste --< f1.txt
+meenu	john
+anju	jacob
+manu	john
+student@T28:~/ajce/mca/rmca$ paste - - -< f1.txt
+meenu	john	anju	jacob	manu	john
+student@T28:~/ajce/mca/rmca$ cat f1.txt 
+meenu	john
+anju	jacob
+manu	john
+student@T28:~/ajce/mca/rmca$ cat f1.txt
+meenu	
+anju
+ammu 
+appu
+annu
+akku	
+student@T28:~/ajce/mca/rmca$ paste - - -< f1.txt
+meenu		anju	ammu 
+appu	annu	akku	
+student@T28:~/ajce/mca/rmca$ paste - - - < f1.txt
+meenu		anju	ammu 
+appu	annu	akku	
+student@T28:~/ajce/mca/rmca$ paste - - - < f1.txt
+meenu	anju	ammu 
+appu	annu	akku	
+student@T28:~/ajce/mca/rmca$ paste - -  < f1.txt
+meenu	anju
+ammu 	appu
+annu	akku	
+student@T28:~/ajce/mca/rmca$ ^C
+student@T28:~/ajce/mca/rmca$ cat f1.txt | paste --
+meenu
+anju
+ammu 
+appu
+annu
+akku	
+student@T28:~/ajce/mca/rmca$ cat f1.txt | paste --
+meenu
+anju
+ammu 
+appu
+annu
+akku	
+student@T28:~/ajce/mca/rmca$ cat f1.txt | paste - -
+meenu	anju
+ammu 	appu
+annu	akku	
+student@T28:~/ajce/mca/rmca$ paste -d "|," f1.txt f2.txt 
+meenu|kottayam
+anju|kollam	KOZHIKOD
+ammu |thiruvalla
+appu|ernakulam
+annu|
+akku	|
+student@T28:~/ajce/mca/rmca$ paste -d "|," f1.txt f2.txt f3.txt
+meenu|kottayam,1	2	5
+anju|kollam	KOZHIKOD,2	5 4
+ammu |thiruvalla,5	7 8 9 5
+appu|ernakulam,
+annu|,
+akku	|,
+student@T28:~/ajce/mca/rmca$ 
+student@T28:~$ cd ajce
+student@T28:~/ajce$ cd mca
+student@T28:~/ajce/mca$  cd rmca
+student@T28:~/ajce/mca/rmca$ cat > f1.txt
+meenu	john
+anju	jacob
+manu	john
+^C
+student@T28:~/ajce/mca/rmca$ cat >f2.txt
+kottayam
+kollam	KOZHIKOD
+thiruvalla
+ernakulam
+^C
+student@T28:~/ajce/mca/rmca$ cat > f3.txt
+1	2       5
+2	5 4
+5	7 8 9 5
+^C
+student@T28:~/ajce/mca/rmca$ paste f1.txt f2.txt
+meenu	john	kottayam
+anju	jacob	kollam	KOZHIKOD
+manu	john	thiruvalla
+	ernakulam
+student@T28:~/ajce/mca/rmca$ paste f1.txt f2.txt f3.txt
+meenu	john	kottayam	1	2	5
+anju	jacob	kollam	KOZHIKOD	2	5 4
+manu	john	thiruvalla	5	7 8 9 5
+	ernakulam	
+student@T28:~/ajce/mca/rmca$ paste -d "|" f1.txt f2.txt 
+meenu	john|kottayam
+anju	jacob|kollam	KOZHIKOD
+manu	john|thiruvalla
+|ernakulam
+student@T28:~/ajce/mca/rmca$ paste -s  f1.txt f2.txt 
+meenu	john	anju	jacob	manu	john
+kottayam	kollam	KOZHIKOD	thiruvalla	ernakulam
+student@T28:~/ajce/mca/rmca$ paste -s-d ","  f1.txt f2.txt 
+paste: invalid option -- '-'
+Try 'paste --help' for more information.
+student@T28:~/ajce/mca/rmca$ paste -s-d  ","  f1.txt f2.txt 
+paste: invalid option -- '-'
+Try 'paste --help' for more information.
+student@T28:~/ajce/mca/rmca$ paste -s-d  ":"  f1.txt f2.txt 
+paste: invalid option -- '-'
+Try 'paste --help' for more information.
+student@T28:~/ajce/mca/rmca$ paste -s -d  ":"  f1.txt f2.txt 
+meenu	john:anju	jacob:manu	john
+kottayam:kollam	KOZHIKOD:thiruvalla:ernakulam
+student@T28:~/ajce/mca/rmca$ cut f1 | paste --
+cut: you must specify a list of bytes, characters, or fields
+Try 'cut --help' for more information.
+student@T28:~/ajce/mca/rmca$ cat f1 | paste --
+cat: f1: No such file or directory
+student@T28:~/ajce/mca/rmca$ cat f1.txt | paste --
+meenu	john
+anju	jacob
+manu	john
+student@T28:~/ajce/mca/rmca$  paste --- <f1.txt
+paste: unrecognized option '---'
+Try 'paste --help' for more information.
+student@T28:~/ajce/mca/rmca$ paste --- < f1.txt
+paste: unrecognized option '---'
+Try 'paste --help' for more information.
+student@T28:~/ajce/mca/rmca$ paste ---< f1.txt
+paste: unrecognized option '---'
+Try 'paste --help' for more information.
+student@T28:~/ajce/mca/rmca$ paste --< f1.txt
+meenu	john
+anju	jacob
+manu	john
+student@T28:~/ajce/mca/rmca$ paste - - -< f1.txt
+meenu	john	anju	jacob	manu	john
+student@T28:~/ajce/mca/rmca$ cat f1.txt 
+meenu	john
+anju	jacob
+manu	john
+student@T28:~/ajce/mca/rmca$ cat f1.txt
+meenu	
+anju
+ammu 
+appu
+annu
+akku	
+student@T28:~/ajce/mca/rmca$ paste - - -< f1.txt
+meenu		anju	ammu 
+appu	annu	akku	
+student@T28:~/ajce/mca/rmca$ paste - - - < f1.txt
+meenu		anju	ammu 
+appu	annu	akku	
+student@T28:~/ajce/mca/rmca$ paste - - - < f1.txt
+meenu	anju	ammu 
+appu	annu	akku	
+student@T28:~/ajce/mca/rmca$ paste - -  < f1.txt
+meenu	anju
+ammu 	appu
+annu	akku	
+student@T28:~/ajce/mca/rmca$ ^C
+student@T28:~/ajce/mca/rmca$ cat f1.txt | paste --
+meenu
+anju
+ammu 
+appu
+annu
+akku	
+student@T28:~/ajce/mca/rmca$ cat f1.txt | paste --
+meenu
+anju
+ammu 
+appu
+annu
+akku	
+student@T28:~/ajce/mca/rmca$ cat f1.txt | paste - -
+meenu	anju
+ammu 	appu
+annu	akku	
+student@T28:~/ajce/mca/rmca$ paste -d "|," f1.txt f2.txt 
+meenu|kottayam
+anju|kollam	KOZHIKOD
+ammu |thiruvalla
+appu|ernakulam
+annu|
+akku	|
+student@T28:~/ajce/mca/rmca$ paste -d "|," f1.txt f2.txt f3.txt
+meenu|kottayam,1	2	5
+anju|kollam	KOZHIKOD,2	5 4
+ammu |thiruvalla,5	7 8 9 5
+appu|ernakulam,
+annu|,
+akku	|,
+student@T28:~/ajce/mca/rmca$ 
+student@T28:~$ cd ajce
+student@T28:~/ajce$ cd mca
+student@T28:~/ajce/mca$  cd rmca
+student@T28:~/ajce/mca/rmca$ cat > f1.txt
+meenu	john
+anju	jacob
+manu	john
+^C
+student@T28:~/ajce/mca/rmca$ cat >f2.txt
+kottayam
+kollam	KOZHIKOD
+thiruvalla
+ernakulam
+^C
+student@T28:~/ajce/mca/rmca$ cat > f3.txt
+1	2       5
+2	5 4
+5	7 8 9 5
+^C
+student@T28:~/ajce/mca/rmca$ paste f1.txt f2.txt
+meenu	john	kottayam
+anju	jacob	kollam	KOZHIKOD
+manu	john	thiruvalla
+	ernakulam
+student@T28:~/ajce/mca/rmca$ paste f1.txt f2.txt f3.txt
+meenu	john	kottayam	1	2	5
+anju	jacob	kollam	KOZHIKOD	2	5 4
+manu	john	thiruvalla	5	7 8 9 5
+	ernakulam	
+student@T28:~/ajce/mca/rmca$ paste -d "|" f1.txt f2.txt 
+meenu	john|kottayam
+anju	jacob|kollam	KOZHIKOD
+manu	john|thiruvalla
+|ernakulam
+student@T28:~/ajce/mca/rmca$ paste -s  f1.txt f2.txt 
+meenu	john	anju	jacob	manu	john
+kottayam	kollam	KOZHIKOD	thiruvalla	ernakulam
+student@T28:~/ajce/mca/rmca$ paste -s-d ","  f1.txt f2.txt 
+paste: invalid option -- '-'
+Try 'paste --help' for more information.
+student@T28:~/ajce/mca/rmca$ paste -s-d  ","  f1.txt f2.txt 
+paste: invalid option -- '-'
+Try 'paste --help' for more information.
+student@T28:~/ajce/mca/rmca$ paste -s-d  ":"  f1.txt f2.txt 
+paste: invalid option -- '-'
+Try 'paste --help' for more information.
+student@T28:~/ajce/mca/rmca$ paste -s -d  ":"  f1.txt f2.txt 
+meenu	john:anju	jacob:manu	john
+kottayam:kollam	KOZHIKOD:thiruvalla:ernakulam
+student@T28:~/ajce/mca/rmca$ cut f1 | paste --
+cut: you must specify a list of bytes, characters, or fields
+Try 'cut --help' for more information.
+student@T28:~/ajce/mca/rmca$ cat f1 | paste --
+cat: f1: No such file or directory
+student@T28:~/ajce/mca/rmca$ cat f1.txt | paste --
+meenu	john
+anju	jacob
+manu	john
+student@T28:~/ajce/mca/rmca$  paste --- <f1.txt
+paste: unrecognized option '---'
+Try 'paste --help' for more information.
+student@T28:~/ajce/mca/rmca$ paste --- < f1.txt
+paste: unrecognized option '---'
+Try 'paste --help' for more information.
+student@T28:~/ajce/mca/rmca$ paste ---< f1.txt
+paste: unrecognized option '---'
+Try 'paste --help' for more information.
+student@T28:~/ajce/mca/rmca$ paste --< f1.txt
+meenu	john
+anju	jacob
+manu	john
+student@T28:~/ajce/mca/rmca$ paste - - -< f1.txt
+meenu	john	anju	jacob	manu	john
+student@T28:~/ajce/mca/rmca$ cat f1.txt 
+meenu	john
+anju	jacob
+manu	john
+student@T28:~/ajce/mca/rmca$ cat f1.txt
+meenu	
+anju
+ammu 
+appu
+annu
+akku	
+student@T28:~/ajce/mca/rmca$ paste - - -< f1.txt
+meenu		anju	ammu 
+appu	annu	akku	
+student@T28:~/ajce/mca/rmca$ paste - - - < f1.txt
+meenu		anju	ammu 
+appu	annu	akku	
+student@T28:~/ajce/mca/rmca$ paste - - - < f1.txt
+meenu	anju	ammu 
+appu	annu	akku	
+student@T28:~/ajce/mca/rmca$ paste - -  < f1.txt
+meenu	anju
+ammu 	appu
+annu	akku	
+student@T28:~/ajce/mca/rmca$ ^C
+student@T28:~/ajce/mca/rmca$ cat f1.txt | paste --
+meenu
+anju
+ammu 
+appu
+annu
+akku	
+student@T28:~/ajce/mca/rmca$ cat f1.txt | paste --
+meenu
+anju
+ammu 
+appu
+annu
+akku	
+student@T28:~/ajce/mca/rmca$ cat f1.txt | paste - -
+meenu	anju
+ammu 	appu
+annu	akku	
+student@T28:~/ajce/mca/rmca$ paste -d "|," f1.txt f2.txt 
+meenu|kottayam
+anju|kollam	KOZHIKOD
+ammu |thiruvalla
+appu|ernakulam
+annu|
+akku	|
+student@T28:~/ajce/mca/rmca$ paste -d "|," f1.txt f2.txt f3.txt
+meenu|kottayam,1	2	5
+anju|kollam	KOZHIKOD,2	5 4
+ammu |thiruvalla,5	7 8 9 5
+appu|ernakulam,
+annu|,
+akku	|,
+

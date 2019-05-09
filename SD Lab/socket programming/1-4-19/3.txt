@@ -1,0 +1,13 @@
+student@T28:~$ cd meenusd
+student@T28:~/meenusd$ cd 1-4-19
+student@T28:~/meenusd/1-4-19$ java Server
+waiting for client.........
+client connected 
+client:>hai
+hello
+client:>how r u
+by
+client:>by
+bye
+student@T28:~/meenusd/1-4-19$ 
+

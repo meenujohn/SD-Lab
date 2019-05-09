@@ -1,0 +1,348 @@
+student@T28:~$ touch sample.txt
+student@T28:~$ cat >sample.txt
+meenu john
+mca regular
+^C        
+student@T28:~$ cat sample.txt
+meenu john
+mca regular
+student@T28:~$ cd ajce
+student@T28:~/ajce$ cd mca
+student@T28:~/ajce/mca$ cd rmca
+student@T28:~/ajce/mca/rmca$ touch f1.txt
+student@T28:~/ajce/mca/rmca$ touch f2.txt
+student@T28:~/ajce/mca/rmca$ cat > f1.txt
+1 2 3 4 5 6^C
+student@T28:~/ajce/mca/rmca$ cat > f1.txt
+meenu john 
+reg mca
+^C
+student@T28:~/ajce/mca/rmca$ cat f1.txt
+meenu john
+reg mca
+student@T28:~/ajce/mca/rmca$ cat > f2.txt
+1 2 3 4 5 6
+^C
+student@T28:~/ajce/mca/rmca$ cat f2.txt
+1 2 3 4 5 6
+student@T28:~/ajce/mca/rmca$ cat f1 > f2
+cat: f1: No such file or directory
+student@T28:~/ajce/mca/rmca$ cat f1.txt > f2.txt
+student@T28:~/ajce/mca/rmca$ cat f2.txt
+meenu john
+reg mca
+student@T28:~/ajce/mca/rmca$ cat > f2.txt
+abcdefghijk
+^C
+student@T28:~/ajce/mca/rmca$ cat f1.txt f2.txt
+meenu john
+reg mca
+abcdefghijk
+student@T28:~/ajce/mca/rmca$ touch f3.txt
+student@T28:~/ajce/mca/rmca$ cat > f3.txt
+amaljyothy college
+^C
+student@T28:~/ajce/mca/rmca$ cat f1.txt f2.txt>f3.txt
+student@T28:~/ajce/mca/rmca$ cat f1.txt f2.txt > f3.txt
+student@T28:~/ajce/mca/rmca$ cat f3.txt
+meenu john
+reg mca
+abcdefghijk
+student@T28:~/ajce/mca/rmca$ cat -n f3.txt
+     1	meenu john
+     2	reg mca
+     3	abcdefghijk
+student@T28:~/ajce/mca/rmca$ cd rmca
+bash: cd: rmca: No such file or directory
+student@T28:~/ajce/mca/rmca$ cd ..
+student@T28:~/ajce/mca$ cd rmca
+student@T28:~/ajce/mca/rmca$ cat f1.txt f2.txt f3.txt
+meenu john
+reg mca
+abcdefghijk
+meenu john
+reg mca
+abcdefghijk
+student@T28:~/ajce/mca/rmca$ cat f1.txt; f2.txt; f3.txt
+meenu john
+reg mca
+f2.txt: command not found
+f3.txt: command not found
+student@T28:~/ajce/mca/rmca$ cat fi.txt;
+cat: fi.txt: No such file or directory
+student@T28:~/ajce/mca/rmca$ cat f1.txt;
+meenu john
+reg mca
+student@T28:~/ajce/mca/rmca$ cat f1.txt; cat f2.txt; cat f3.txt;
+meenu john
+reg mca
+abcdefghijk
+meenu john
+reg mca
+abcdefghijk
+student@T28:~/ajce/mca/rmca$ cat -sf1.txt
+cat: invalid option -- 'f'
+Try 'cat --help' for more information.
+student@T28:~/ajce/mca/rmca$ cat -s f1.txt
+meenu john
+reg mca
+student@T28:~/ajce/mca/rmca$ cat -s f1.txt
+meenu john
+reg     mca
+student@T28:~/ajce/mca/rmca$ cat f1.txt
+meenu john
+reg     mca
+student@T28:~/ajce/mca/rmca$ cat -n f1.txt
+     1	meenu john
+     2	reg     mca
+student@T28:~/ajce/mca/rmca$ cat f2.txt
+a
+b
+
+
+c
+d
+
+e
+f
+g
+
+
+
+h
+i
+j
+k
+student@T28:~/ajce/mca/rmca$ cat -n f2.txt
+     1	a
+     2	b
+     3	
+     4	
+     5	c
+     6	d
+     7	
+     8	e
+     9	f
+    10	g
+    11	
+    12	
+    13	
+    14	h
+    15	i
+    16	j
+    17	k
+student@T28:~/ajce/mca/rmca$ cat -s f2.txt
+a
+b
+
+c
+d
+
+e
+f
+g
+
+h
+i
+j
+k
+student@T28:~/ajce/mca/rmca$ cat -n f2.txt
+     1	a
+     2	b
+     3	
+     4	
+     5	c
+     6	d
+     7	
+     8	e
+     9	f
+    10	g
+    11	
+    12	
+    13	
+    14	h
+    15	i
+    16	j
+    17	k
+student@T28:~/ajce/mca/rmca$ cat -n -s f2.txt
+     1	a
+     2	b
+     3	
+     4	c
+     5	d
+     6	
+     7	e
+     8	f
+     9	g
+    10	
+    11	h
+    12	i
+    13	j
+    14	k
+student@T28:~/ajce/mca/rmca$ tac f2.txt
+k
+j
+i
+h
+
+
+
+g
+f
+e
+
+d
+c
+
+
+b
+a
+student@T28:~/ajce/mca/rmca$ cat -b f2.txt
+     1	a
+     2	b
+
+
+     3	c
+     4	d
+
+     5	e
+     6	f
+     7	g
+
+
+
+     8	h
+     9	i
+    10	j
+    11	k
+student@T28:~/ajce/mca/rmca$ cat -e f2.txt
+a$
+b$
+$
+$
+c$
+d$
+$
+e$
+f$
+g$
+$
+$
+$
+h$
+i$
+j$
+k$
+student@T28:~/ajce/mca/rmca$ cat -v f2.txt
+a
+b
+
+
+c
+d
+
+e
+f
+g
+
+
+
+h
+i
+j
+k
+student@T28:~/ajce/mca/rmca$ cat f1.txt>>f2.txt
+student@T28:~/ajce/mca/rmca$ ca t f2.txt
+ca: command not found
+student@T28:~/ajce/mca/rmca$ cat f2.txt
+a
+b
+
+
+c
+d
+
+e
+f
+g
+
+
+
+h
+i
+j
+k
+meenu john
+reg     mca
+student@T28:~/ajce/mca/rmca$ mv fi.txt f2.txt
+mv: cannot stat 'fi.txt': No such file or directory
+student@T28:~/ajce/mca/rmca$ mv f1.txt f2.txt
+student@T28:~/ajce/mca/rmca$ cat f1.txt
+cat: f1.txt: No such file or directory
+student@T28:~/ajce/mca/rmca$ cat f2.txt
+meenu john
+reg     mca
+student@T28:~/ajce/mca/rmca$ man  mv
+student@T28:~/ajce/mca/rmca$ mv i f2.txt
+mv: cannot stat 'i': No such file or directory
+student@T28:~/ajce/mca/rmca$ mv -i f2.txt
+mv: missing destination file operand after 'f2.txt'
+Try 'mv --help' for more information.
+student@T28:~/ajce/mca/rmca$ mv -i f2.txt f3.txt
+mv: overwrite 'f3.txt'? n
+student@T28:~/ajce/mca/rmca$ mv -i f2.txt f3.txt
+mv: overwrite 'f3.txt'? y
+student@T28:~/ajce/mca/rmca$ mv f1.txt lmca
+student@T28:~/ajce/mca/rmca$ mv  lmca f1.txt
+student@T28:~/ajce/mca/rmca$ man mv
+student@T28:~/ajce/mca/rmca$ mv -s f2.txt f3.txt
+mv: invalid option -- 's'
+Try 'mv --help' for more information.
+student@T28:~/ajce/mca/rmca$ mv -l f2.txt f3.txt
+mv: invalid option -- 'l'
+Try 'mv --help' for more information.
+student@T28:~/ajce/mca/rmca$ mv f1.txt f2.txt files
+mv: target 'files' is not a directory
+student@T28:~/ajce/mca/rmca$ mv f1.txt f2.txt mca
+mv: target 'mca' is not a directory
+student@T28:~/ajce/mca/rmca$ mv f1.txt f2.txt lmca
+mv: target 'lmca' is not a directory
+student@T28:~/ajce/mca/rmca$ mv f1.txt f3.txt lmca
+mv: target 'lmca' is not a directory
+student@T28:~/ajce/mca/rmca$ cd ..
+student@T28:~/ajce/mca$ cd lmca
+bash: cd: lmca: No such file or directory
+student@T28:~/ajce/mca$ cd lmca
+bash: cd: lmca: No such file or directory
+student@T28:~/ajce/mca$ cd ..
+student@T28:~/ajce$ cd mca
+student@T28:~/ajce/mca$ cd lmca
+bash: cd: lmca: No such file or directory
+student@T28:~/ajce/mca$ cd lemca
+student@T28:~/ajce/mca/lemca$ mv f1.txt f3.txt lemca
+mv: target 'lemca' is not a directory
+student@T28:~/ajce/mca/lemca$ ls
+student@T28:~/ajce/mca/lemca$ cd ..
+student@T28:~/ajce/mca$ ls
+intmca  lemca  out.txt  rmca
+student@T28:~/ajce/mca$ mv out.txt rmca
+student@T28:~/ajce/mca$ ls
+intmca  lemca  rmca
+student@T28:~/ajce/mca$ cd rmca
+student@T28:~/ajce/mca/rmca$ ls
+f1.txt  f3.txt  out.txt
+student@T28:~/ajce/mca/rmca$ mkdir text
+student@T28:~/ajce/mca/rmca$ ls
+f1.txt  f3.txt  out.txt  text
+student@T28:~/ajce/mca/rmca$ mv f1.txt f3.txt text
+student@T28:~/ajce/mca/rmca$ cd text
+student@T28:~/ajce/mca/rmca/text$ ls
+f1.txt  f3.txt
+student@T28:~/ajce/mca/rmca/text$ mv *.txt text
+mv: target 'text' is not a directory
+student@T28:~/ajce/mca/rmca/text$ cd..
+cd..: command not found
+student@T28:~/ajce/mca/rmca/text$ cd ..
+student@T28:~/ajce/mca/rmca$ mv *.txt text
+student@T28:~/ajce/mca/rmca$ 
+

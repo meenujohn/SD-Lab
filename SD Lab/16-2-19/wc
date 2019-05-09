@@ -1,0 +1,38 @@
+student@T28:~$ cd ajce
+student@T28:~/ajce$ cd mca
+student@T28:~/ajce/mca$ cd rmca
+student@T28:~/ajce/mca/rmca$ cat m.txt
+cat: m.txt: No such file or directory
+student@T28:~/ajce/mca/rmca$ cat> m.txt
+1 2 3 4 5 6 7
+4 5 6 7 8 9 9
+1 2 4 5 6 7 7
+4 6 7 8 9 0 0
+^C
+student@T28:~/ajce/mca/rmca$ wc m.txt
+ 4 28 56 m.txt
+student@T28:~/ajce/mca/rmca$ wc -l m.txt
+4 m.txt
+student@T28:~/ajce/mca/rmca$ wc -c m.txt
+56 m.txt
+student@T28:~/ajce/mca/rmca$ wc -m m.txt
+56 m.txt
+student@T28:~/ajce/mca/rmca$ wc -L m.txt
+13 m.txt
+student@T28:~/ajce/mca/rmca$ wc -w m.txt
+28 m.txt
+student@T28:~/ajce/mca/rmca$ cat > j.txt
+meenu john
+amaljyothi college of engineering
+kanjirapally
+^C
+student@T28:~/ajce/mca/rmca$ wc -L j.txt
+33 j.txt
+student@T28:~/ajce/mca/rmca$ ^C
+student@T28:~/ajce/mca/rmca$ wc -c j.txt
+58 j.txt
+student@T28:~/ajce/mca/rmca$ wc -m j.txt
+58 j.txt
+student@T28:~/ajce/mca/rmca$ ^C
+student@T28:~/ajce/mca/rmca$ 
+

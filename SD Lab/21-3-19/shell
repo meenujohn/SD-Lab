@@ -1,0 +1,100 @@
+student@T28:~$ vi meenu.sh
+student@T28:~$ chmod+x meenu.sh
+chmod+x: command not found
+student@T28:~$ chmod + x meenu.sh
+chmod: cannot access 'x': No such file or directory
+student@T28:~$ gedit system.sh
+student@T28:~$ chmod +x system.sh
+student@T28:~$ ./system
+bash: ./system: No such file or directory
+student@T28:~$ ./system.sh
+haii
+student@T28:~$ chmod +x meenu.sh
+student@T28:~$ ./meenu.sh
+hello
+student@T28:~$ gedit system.sh
+^C  
+student@T28:~$ chmod +x system.sh
+student@T28:~$ ./system.sh
+Hello World
+The date today id Thu Mar 21 14:30:12 IST 2019
+The current directory is /home/student
+student@T28:~$ gedit system.sh
+^C  
+student@T28:~$ gedit prg2.sh
+student@T28:~$ chmod +x prg2.sh
+student@T28:~$ ./prg2.sh
+value of var is test string
+student@T28:~$ gedit prg3.sh
+student@T28:~$ chmod +x prg3.sh
+student@T28:~$ ./prg3.sh
+./prg3.sh: line 1: var: command not found
+value of var is $var
+student@T28:~$ chmod +x prg3.sh
+student@T28:~$ gedit prg3.sh
+student@T28:~$ chmod +x prg3.sh
+student@T28:~$ ./prg3.sh
+value of var is $var
+student@T28:~$ gedit arg.sh
+student@T28:~$ chmod +x arg.sh
+student@T28:~$ ./arg.sh
+The command is ./arg.sh
+The first argument is 
+The second argument is 
+The Third argument is 
+The Fourth argument is 
+student@T28:~$ ./arg.sh meenu john s4 mca
+The command is ./arg.sh
+The first argument is meenu
+The second argument is john
+The Third argument is s4
+The Fourth argument is mca
+student@T28:~$ gedit prg4.sh
+student@T28:~$ gedit arg.sh
+student@T28:~$ chmod +x arg.sh
+student@T28:~$ ./arg.sh
+The command is ./arg.sh
+The command is 0
+The command is 
+The command is 
+student@T28:~$ gedit arg.sh
+^C
+student@T28:~$ ./arg.sh 1 2 3 
+The command is ./arg.sh
+The command is 3
+The command is 1 2 3
+The command is 1 2 3
+student@T28:~$ gedit prg4.sh
+student@T28:~$ chmod +x prg4.sh
+student@T28:~$ ./prg4.sh
+./prg4.sh: line 1: $: command not found
+
+student@T28:~$ gedit prg4.sh
+student@T28:~$ chmod +x prg4.sh
+student@T28:~$ ./prg4.sh
+
+student@T28:~$ gedit prg4.sh
+student@T28:~$ gedit prg4.sh
+student@T28:~$ chmod +x prg4.sh
+student@T28:~$ ./prg4.sh
+5+10=15
+student@T28:~$ gedit prg5.sh
+student@T28:~$ chmod +x prg5.sh
+student@T28:~$ ./prg5.sh
+Enter two numbers2 6
+./prg5.sh: line 2: syntax error near unexpected token `('
+./prg5.sh: line 2: `ans=((x+y))'
+2+6=
+student@T28:~$ gedit prg5.sh
+student@T28:~$ ./prg5.sh
+Enter two numbers2 6
+2+6=8
+student@T28:~$ gedit prg5.sh
+^C  
+student@T28:~$ ./prg5.sh
+sum is 10+10
+student@T28:~$ gedit prg5.sh
+student@T28:~$ ./prg5.sh
+sum is30
+student@T28:~$ 
+

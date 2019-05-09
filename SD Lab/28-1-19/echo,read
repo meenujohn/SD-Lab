@@ -1,0 +1,66 @@
+student@T28:~$ echo meenu
+meenu
+student@T28:~$ read a
+4
+student@T28:~$ echo $a
+4
+student@T28:~$ echo a
+a
+student@T28:~$ man echo
+student@T28:~$ read a
+2
+student@T28:~$ man read
+student@T28:~$ man echo
+student@T28:~$ man echo
+student@T28:~$ echo e
+e
+student@T28:~$ echo-e
+echo-e: command not found
+student@T28:~$ cal
+    January 2019      
+Su Mo Tu We Th Fr Sa  
+       1  2  3  4  5  
+ 6  7  8  9 10 11 12  
+13 14 15 16 17 18 19  
+20 21 22 23 24 25 26  
+27 28 29 30 31        
+                      
+student@T28:~$ date
+Mon Jan 28 12:31:58 IST 2019
+student@T28:~$ pwd
+/home/student
+student@T28:~$ tty
+/dev/pts/0
+student@T28:~$ echo-e'hai \bhello \beveryone.'
+echo-ehai \bhello \beveryone.: command not found
+student@T28:~$ echo-e'hai\bhello\beveryone.'
+echo-ehai\bhello\beveryone.: command not found
+student@T28:~$ echo-e "hai \bhello \beveryone"
+echo-e: command not found
+student@T28:~$ echo -e "hai \bhello \beveryone"
+haihelloeveryone
+student@T28:~$ echo -e "hai \nhello \neveryone"
+hai 
+hello 
+everyone
+student@T28:~$ echo -e "hai \thello \teveryone"
+hai 	hello 	everyone
+student@T28:~$ echo -e "hai \vhello \veveryone"
+hai 
+    hello 
+          everyone
+student@T28:~$ echo -e "hai \tvhello \tveveryone"
+hai 	vhello 	veveryone
+student@T28:~$ echo -e "hai \rhello everyone"
+hello everyone
+student@T28:~$ echo -e "hai \chello everyone"
+hai student@T28:~$ 
+
+
+
+
+
+
+
+
+

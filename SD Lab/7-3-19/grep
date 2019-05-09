@@ -1,0 +1,233 @@
+student@T28:~$ cd ajce
+student@T28:~/ajce$ cd mca
+student@T28:~/ajce/mca$  cd rmca
+student@T28:~/ajce/mca/rmca$ cat > g.txt
+^C
+student@T28:~/ajce/mca/rmca$ grep "unix" g.txt
+unix is great os. unix is opensource. unix is free os.
+uNix is easy to learn.unix is a multiuser os.Learn unix .unix is a powerful.
+student@T28:~/ajce/mca/rmca$ cat > g.txt
+^C
+student@T28:~/ajce/mca/rmca$ grep "unix" g.txt
+student@T28:~/ajce/mca/rmca$ grep "unix" g.txt
+student@T28:~/ajce/mca/rmca$ cat g.txt
+student@T28:~/ajce/mca/rmca$ cat g.txt
+unix is great os. unix is opensource. 
+unix is free os.
+learn operating system.
+Unix linux which one you choose.
+uNix is easy to learn.unix is a multiuser os.
+Learn unix .
+unix is a powerful.
+student@T28:~/ajce/mca/rmca$ grep "unix" g.txt
+unix is great os. unix is opensource. 
+unix is free os.
+uNix is easy to learn.unix is a multiuser os.
+Learn unix .
+unix is a powerful.
+student@T28:~/ajce/mca/rmca$ grep "unix" g.txt
+unix is great os. 
+unix is opensource. 
+unix is free os.
+Learn unix .
+unix is a powerful.
+student@T28:~/ajce/mca/rmca$ cat > r.txt
+^C
+student@T28:~/ajce/mca/rmca$ grep "unix" g.txt r.txt
+g.txt:unix is great os. 
+g.txt:unix is opensource. 
+g.txt:unix is free os.
+g.txt:Learn unix .
+g.txt:unix is a powerful.
+r.txt:unix is great os. 
+r.txt:unix is opensource. 
+r.txt:unix is free os.
+r.txt:Learn unix .
+r.txt:unix is a powerful.
+student@T28:~/ajce/mca/rmca$ grep -i "unix" r.txt
+unix is great os. 
+unix is opensource. 
+unix is free os.
+Unix linux which one you choose.
+uNix is easy to learn.
+Learn unix .
+unix is a powerful.
+student@T28:~/ajce/mca/rmca$ grep -i "UNIX" r.txt
+unix is great os. 
+unix is opensource. 
+unix is free os.
+Unix linux which one you choose.
+uNix is easy to learn.
+Learn unix .
+unix is a powerful.
+student@T28:~/ajce/mca/rmca$ grep -w 'LINUX|UNIX' r.txt
+student@T28:~/ajce/mca/rmca$ grep -w 'LINUX|UNIX' g.txt
+student@T28:~/ajce/mca/rmca$ cat g.txt
+unix is great os. 
+unix is opensource. 
+unix is free os.
+learn operating system.
+Unix linux which one you choose.
+uNix is easy to learn.
+It is a multiuser os.
+Learn unix .
+unix is a powerful.
+student@T28:~/ajce/mca/rmca$ grep -w 'LINUX|UNIX' g.txt r.txt
+student@T28:~/ajce/mca/rmca$ cat r.txt
+unix is great os. 
+unix is opensource. 
+unix is free os.
+learn operating system.
+Unix linux which one you choose.
+uNix is easy to learn.
+It is a multiuser os.
+Learn unix .
+unix is a powerful.
+student@T28:~/ajce/mca/rmca$ egrep -w 'LINUX|UNIX' g.txt r.txt
+student@T28:~/ajce/mca/rmca$ egrep -w 'LINUX|UNIX' g.txt r.txt^C
+student@T28:~/ajce/mca/rmca$ cat r.txt
+unix is great os. 
+unix is opensource. 
+unix is free os.
+learn operating system.
+Unix linux which one you choose.
+uNix is easy to learn.
+It is a multiuser os.
+Learn unix .
+unix is a powerful.
+student@T28:~/ajce/mca/rmca$ cat g.txt
+unix is great os. 
+unix is opensource. 
+unix is free os.
+learn operating system.
+Unix linux which one you choose.
+uNix is easy to learn.
+It is a multiuser os.
+Learn unix .
+unix is a powerful.
+student@T28:~/ajce/mca/rmca$ egrep -w 'muliuser|unix' g.txt r.txt
+g.txt:unix is great os. 
+g.txt:unix is opensource. 
+g.txt:unix is free os.
+g.txt:Learn unix .
+g.txt:unix is a powerful.
+r.txt:unix is great os. 
+r.txt:unix is opensource. 
+r.txt:unix is free os.
+r.txt:Learn unix .
+r.txt:unix is a powerful.
+student@T28:~/ajce/mca/rmca$ egrep -w 'linux|unix' g.txt r.txt
+g.txt:unix is great os. 
+g.txt:unix is opensource. 
+g.txt:unix is free os.
+g.txt:Unix linux which one you choose.
+g.txt:Learn unix .
+g.txt:unix is a powerful.
+r.txt:unix is great os. 
+r.txt:unix is opensource. 
+r.txt:unix is free os.
+r.txt:Unix linux which one you choose.
+r.txt:Learn unix .
+r.txt:unix is a powerful.
+student@T28:~/ajce/mca/rmca$ grep -B2 "unix" g.txt
+unix is great os. 
+unix is opensource. 
+unix is free os.
+--
+uNix is easy to learn.
+It is a multiuser os.
+Learn unix .
+unix is a powerful.
+student@T28:~/ajce/mca/rmca$ grep -B2 "unix" g.txt
+unix is great os. 
+unix is opensource. 
+unix is free os.
+--
+uNix is easy to learn.
+It is a multiuser os.
+Learn unix .
+unix is a powerful.
+student@T28:~/ajce/mca/rmca$ grep -B2 "unix" g.txt
+unix is great os. 
+unix is opensource. 
+unix is free os.
+--
+uNix is easy to learn.
+It is a multiuser os.
+Learn unix .
+unix is a powerful.
+student@T28:~/ajce/mca/rmca$ ^C
+student@T28:~/ajce/mca/rmca$ grep -B2 "unix" g.txt
+unix is great os. 
+unix is opensource. 
+unix is free os.
+--
+uNix is easy to learn.
+It is a multiuser os.
+Learn unix .
+unix is a powerful.
+student@T28:~/ajce/mca/rmca$ grep -B2 "unix" r.txt
+ grep searches for PATTERNS in each FILE.
+ PATTERNS is one or patterns.
+ unix is great os. 
+unix is opensource. 
+unix is free os.
+--
+uNix is easy to learn.
+It is a multiuser os.
+Learn unix .
+unix is a powerful.
+student@T28:~/ajce/mca/rmca$ grep -A2 "unix" r.txt
+ unix is great os. 
+unix is opensource. 
+unix is free os.
+learn operating system.
+Unix linux which one you choose.
+--
+Learn unix .
+unix is a powerful.
+  separated by newline characters.
+and grep prints each line that.
+student@T28:~/ajce/mca/rmca$ grep -v "unix" r.txt
+ grep searches for PATTERNS in each FILE.
+ PATTERNS is one or patterns.
+learn operating system.
+Unix linux which one you choose.
+uNix is easy to learn.
+It is a multiuser os.
+  separated by newline characters.
+and grep prints each line that.
+   matches a pattern.
+
+student@T28:~/ajce/mca/rmca$ grep -c "unix" r.txt
+5
+student@T28:~/ajce/mca/rmca$ grep -c "unix" g.txt
+5
+student@T28:~/ajce/mca/rmca$ grep -c "linux" g.txt
+1
+student@T28:~/ajce/mca/rmca$ grep -n "linux" g.txt
+5:Unix linux which one you choose.
+student@T28:~/ajce/mca/rmca$ grep -n "unix" g.txt
+1:unix is great os. 
+2:unix is opensource. 
+3:unix is free os.
+8:Learn unix .
+9:unix is a powerful.
+student@T28:~/ajce/mca/rmca$ grep  "^unix" g.txt
+unix is great os. 
+unix is opensource. 
+unix is free os.
+unix is a powerful.
+student@T28:~/ajce/mca/rmca$ grep  "^unix$" g.txt
+student@T28:~/ajce/mca/rmca$ grep  "^os$" g.txt
+student@T28:~/ajce/mca/rmca$ grep  "os$" g.txt
+student@T28:~/ajce/mca/rmca$ ^C
+student@T28:~/ajce/mca/rmca$ 
+student@T28:~/ajce/mca/rmca$ grep "os$" g.txt
+student@T28:~/ajce/mca/rmca$ grep "powerful$" g.txt
+student@T28:~/ajce/mca/rmca$ grep  "os$" g.txt
+student@T28:~/ajce/mca/rmca$ grep "os$" g.txt
+student@T28:~/ajce/mca/rmca$ grep -l "unix" g.txt
+g.txt
+student@T28:~/ajce/mca/rmca$ 
+

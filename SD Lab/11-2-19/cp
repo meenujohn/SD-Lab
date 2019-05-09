@@ -1,0 +1,111 @@
+student@T28:~$ mkdir ajce
+student@T28:~$ cd ajce
+student@T28:~/ajce$ mkdir mca
+student@T28:~/ajce$ cd mca
+student@T28:~/ajce/mca$ mkdir int mca
+student@T28:~/ajce/mca$ mkdir le mca
+mkdir: cannot create directory ‘mca’: File exists
+student@T28:~/ajce/mca$ mkdir lemca
+student@T28:~/ajce/mca$ mkdir rmca
+student@T28:~/ajce/mca$ cd rmca
+student@T28:~/ajce/mca/rmca$ cat > f1.txt
+1 2 3 4 5 6
+^C
+student@T28:~/ajce/mca/rmca$ cat > f2.txt
+q w e d f v b n
+^C
+student@T28:~/ajce/mca/rmca$ cd ..
+student@T28:~/ajce/mca$ cd int mca
+bash: cd: too many arguments
+student@T28:~/ajce/mca$ cd intmca
+bash: cd: intmca: No such file or directory
+student@T28:~/ajce/mca$ mkdir intmca
+student@T28:~/ajce/mca$ cd intmca
+student@T28:~/ajce/mca/intmca$ cat > f3.txt
+meenujohn
+amaljyothy college
+c
+^C
+student@T28:~/ajce/mca/intmca$ cd ..
+student@T28:~/ajce/mca$ cd ..
+student@T28:~/ajce$ cd rmca
+bash: cd: rmca: No such file or directory
+student@T28:~/ajce$ cd mca
+student@T28:~/ajce/mca$ cd rmca
+student@T28:~/ajce/mca/rmca$ cp f1.txt f2.txt
+student@T28:~/ajce/mca/rmca$ ls f1.txt
+f1.txt
+student@T28:~/ajce/mca/rmca$ cp f1.txt f2.txt f3.txt
+cp: target 'f3.txt' is not a directory
+student@T28:~/ajce/mca/rmca$ cp f1.txt f2.txt f3.txt lemca
+cp: target 'lemca' is not a directory
+student@T28:~/ajce/mca/rmca$ cd ..
+student@T28:~/ajce/mca$ mkdir asd
+student@T28:~/ajce/mca$ cp f1.txt f2.txt f3.txt asd
+cp: cannot stat 'f1.txt': No such file or directory
+cp: cannot stat 'f2.txt': No such file or directory
+cp: cannot stat 'f3.txt': No such file or directory
+student@T28:~/ajce/mca$ cd rmca
+student@T28:~/ajce/mca/rmca$ cp f1.txt f2.txt asd
+cp: target 'asd' is not a directory
+student@T28:~/ajce/mca/rmca$ mkdir asd
+student@T28:~/ajce/mca/rmca$ cp f1.txt f2.txt asd
+student@T28:~/ajce/mca/rmca$ cd ..
+student@T28:~/ajce/mca$ cp intmca rmca
+cp: -r not specified; omitting directory 'intmca'
+student@T28:~/ajce/mca$ cp -r  intmca rmca
+student@T28:~/ajce/mca$ cp -R  intmca rmca
+student@T28:~/ajce/mca$ cat f1.txt
+cat: f1.txt: No such file or directory
+student@T28:~/ajce/mca$ cd rmca
+student@T28:~/ajce/mca/rmca$ cat f1.txt
+1 2 3 4 5 6
+student@T28:~/ajce/mca/rmca$ cat f2.txt
+1 2 3 4 5 6
+student@T28:~/ajce/mca/rmca$ cat > f2.txt
+college college college
+^C
+student@T28:~/ajce/mca/rmca$ cat f2.txt
+college college college
+student@T28:~/ajce/mca/rmca$ cd ..
+student@T28:~/ajce/mca$ cd intmca
+student@T28:~/ajce/mca/intmca$ cat > intmca
+welcome
+^C
+student@T28:~/ajce/mca/intmca$ cd ..
+student@T28:~/ajce/mca$ cd rmca
+student@T28:~/ajce/mca/rmca$ cp -b f1.txt f2.txt
+student@T28:~/ajce/mca/rmca$ cat f2.txt~
+college college college
+student@T28:~/ajce/mca/rmca$ cp -i f1.txt f2.txt
+cp: overwrite 'f2.txt'? n
+student@T28:~/ajce/mca/rmca$ man cp
+student@T28:~/ajce/mca/rmca$ 
+student@T28:~/ajce/mca/rmca$ cp -v f1.txt f2.txt
+'f1.txt' -> 'f2.txt'
+student@T28:~/ajce/mca/rmca$ man cp
+student@T28:~/ajce/mca/rmca$ cd..
+cd..: command not found
+student@T28:~/ajce/mca/rmca$ cd ..
+student@T28:~/ajce/mca$ man cp
+student@T28:~/ajce/mca$ 
+student@T28:~/ajce/mca$ cd intmca
+student@T28:~/ajce/mca/intmca$ cp -f f3.txt f4.txt
+student@T28:~/ajce/mca/intmca$ man cp
+student@T28:~/ajce/mca/intmca$ cp -n f3.txt f4.txt
+student@T28:~/ajce/mca/intmca$ man cp
+student@T28:~/ajce/mca/intmca$ cp -l f3.txt f4.txt
+cp: cannot create hard link 'f4.txt' to 'f3.txt': File exists
+student@T28:~/ajce/mca/intmca$ cp -l f3.txt f5.txt
+student@T28:~/ajce/mca/intmca$ cp -L f3.txt f5.txt
+cp: 'f3.txt' and 'f5.txt' are the same file
+student@T28:~/ajce/mca/intmca$ cp -L f3.txt f6.txt
+student@T28:~/ajce/mca/intmca$ cp -p f3.txt f6.txt
+student@T28:~/ajce/mca/intmca$ man cp
+student@T28:~/ajce/mca/intmca$ man cp
+student@T28:~/ajce/mca/intmca$ cp -u  f3.txt f6.txt
+student@T28:~/ajce/mca/intmca$ cp -u  f6.txt f3.txt
+student@T28:~/ajce/mca/intmca$ man cp
+student@T28:~/ajce/mca/intmca$ ^C
+student@T28:~/ajce/mca/intmca$ 
+

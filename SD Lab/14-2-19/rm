@@ -1,0 +1,28 @@
+student@T28:~$ cd ajce
+student@T28:~/ajce$ cd mca
+student@T28:~/ajce/mca$  cd rmca
+student@T28:~/ajce/mca/rmca$ ls
+f1.txt  f2.txt  f2.txt~  intmca
+student@T28:~/ajce/mca/rmca$ rm fi.txt
+rm: cannot remove 'fi.txt': No such file or directory
+student@T28:~/ajce/mca/rmca$ rm f1.txt
+student@T28:~/ajce/mca/rmca$ cd ..
+student@T28:~/ajce/mca$ cd lemca
+student@T28:~/ajce/mca/lemca$ rm f4.txt f5.txt
+rm: cannot remove 'f4.txt': No such file or directory
+rm: cannot remove 'f5.txt': No such file or directory
+student@T28:~/ajce/mca/lemca$ rm f1.txt f2.txt
+student@T28:~/ajce/mca/lemca$ cd ..
+student@T28:~/ajce/mca$ cd intmca
+student@T28:~/ajce/mca/intmca$ rm *.txt
+student@T28:~/ajce/mca/intmca$ cd /
+student@T28:/$ cd ajce
+bash: cd: ajce: No such file or directory
+student@T28:/$ cd ~
+student@T28:~$ cd ajce
+student@T28:~/ajce$ cd mca
+student@T28:~/ajce/mca$ rm -R lmca
+rm: cannot remove 'lmca': No such file or directory
+student@T28:~/ajce/mca$ rm -R lemca
+student@T28:~/ajce/mca$ 
+

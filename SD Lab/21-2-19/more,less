@@ -1,0 +1,353 @@
+student@T28:~$ cd ajce
+student@T28:~/ajce$ cd mca
+student@T28:~/ajce/mca$  cd rmca
+student@T28:~/ajce/mca/rmca$ more file.txt
+
+38 Basic Linux Commands to Learn with Examples
+Updated October 29, 2018LINUX COMMANDS
+
+This article I will show you 38 basic Linux commands with examples that are freq
+uently used to get you more familiar with Linux command line. Linux based Operat
+ing Systems are very powerful but their true power lies in the command line. The
+re is a lot that you can do with the help of commands but can't otherwise (using
+ GUI).
+
+In this article, we will find out about basic Linux commands that are used most 
+frequently. Now, let's start from the beginning.
+Syntax
+
+The commands in Linux have the following $command options arguments
+
+The command is followed by options (optional of course) and a list of arguments.
+ The options can modify the behavior of a command. The arguments may be files or
+ directories or some other data on which the command acts. Every command might n
+ot need arguments. Some commands work with or without them (e.g. ‘ls’ command).T
+he options can be provided in two ways: full word options with -- (e.g. --help),
+ or single letter options with - (e.g. -a -b -c or multiple options, -abc).
+Linux Basic Commands
+
+Let’s start with some simple commands.
+
+
+‘pwd’ command prints the absolute path to current working directory.
+student@T28:~/ajce/mca/rmca$ more -d file.txt
+
+38 Basic Linux Commands to Learn with Examples
+Updated October 29, 2018LINUX COMMANDS
+
+This article I will show you 38 basic Linux commands with examples that are freq
+uently used to get you more familiar with Linux command line. Linux based Operat
+ing Systems are very powerful but their true power lies in the command line. The
+re is a lot that you can do with the help of commands but can't otherwise (using
+ GUI).
+
+In this article, we will find out about basic Linux commands that are used most 
+frequently. Now, let's start from the beginning.
+Syntax
+
+The commands in Linux have the following $command options arguments
+
+The command is followed by options (optional of course) and a list of arguments.
+ The options can modify the behavior of a command. The arguments may be files or
+ directories or some other data on which the command acts. Every command might n
+ot need arguments. Some commands work with or without them (e.g. ‘ls’ command).T
+he options can be provided in two ways: full word options with -- (e.g. --help),
+ or single letter options with - (e.g. -a -b -c or multiple options, -abc).
+Linux Basic Commands
+
+Let’s start with some simple commands.
+
+
+‘pwd’ command prints the absolute path to current working directory.
+student@T28:~/ajce/mca/rmca$ more -d file.txt
+
+38 Basic Linux Commands to Learn with Examples
+Updated October 29, 2018LINUX COMMANDS
+
+This article I will show you 38 basic Linux commands with examples that are freq
+uently used to get you more familiar with Linux command line. Linux based Operat
+ing Systems are very powerful but their true power lies in the command line. The
+re is a lot that you can do with the help of commands but can't otherwise (using
+ GUI).
+
+In this article, we will find out about basic Linux commands that are used most 
+frequently. Now, let's start from the beginning.
+Syntax
+
+The commands in Linux have the following $command options arguments
+
+The command is followed by options (optional of course) and a list of arguments.
+ The options can modify the behavior of a command. The arguments may be files or
+ directories or some other data on which the command acts. Every command might n
+ot need arguments. Some commands work with or without them (e.g. ‘ls’ command).T
+he options can be provided in two ways: full word options with -- (e.g. --help),
+ or single letter options with - (e.g. -a -b -c or multiple options, -abc).
+Linux Basic Commands
+student@T28:~/ajce/mca/rmca$ more -s file.txt
+
+38 Basic Linux Commands to Learn with Examples
+Updated October 29, 2018LINUX COMMANDS
+
+This article I will show you 38 basic Linux commands with examples that are freq
+uently used to get you more familiar with Linux command line. Linux based Operat
+ing Systems are very powerful but their true power lies in the command line. The
+re is a lot that you can do with the help of commands but can't otherwise (using
+ GUI).
+
+In this article, we will find out about basic Linux commands that are used most 
+frequently. Now, let's start from the beginning.
+Syntax
+
+The commands in Linux have the following $command options arguments
+
+The command is followed by options (optional of course) and a list of arguments.
+ The options can modify the behavior of a command. The arguments may be files or
+ directories or some other data on which the command acts. Every command might n
+ot need arguments. Some commands work with or without them (e.g. ‘ls’ command).T
+he options can be provided in two ways: full word options with -- (e.g. --help),
+ or single letter options with - (e.g. -a -b -c or multiple options, -abc).
+Linux Basic Commands
+student@T28:~/ajce/mca/rmca$ more -s file.txt
+
+38 Basic Linux Commands to Learn with Examples
+Updated October 29, 2018LINUX COMMANDS
+
+This article I will show you 38 basic Linux commands with examples that are frequently used to get you more familiar with Linux command line. 
+Linux based Operating Systems are very powerful but their true power lies in the command line. There is a lot that you can do with the help of
+ commands but can't otherwise (using GUI).
+
+In this article, we will find out about basic Linux commands that are used most frequently. Now, let's start from the beginning.
+Syntax
+
+The commands in Linux have the following $command options arguments
+
+The command is followed by options (optional of course) and a list of arguments. The options can modify the behavior of a command. The argumen
+ts may be files or directories or some other data on which the command acts. Every command might not need arguments. Some commands work with o
+r without them (e.g. ‘ls’ command).The options can be provided in two ways: full word options with -- (e.g. --help), or single letter options 
+with - (e.g. -a -b -c or multiple options, -abc).
+Linux Basic Commands.
+
+Let’s start with some simple commands.
+
+‘pwd’ command prints the absolute path to current working directory.
+student@T28:~/ajce/mca/rmca$ more -s file.txt
+
+38 Basic Linux Commands to Learn with Examples
+Updated October 29, 2018LINUX COMMANDS
+
+This article I will show you 38 basic Linux commands with examples that are frequently used to get you more familiar with Linux command line. 
+Linux based Operating Systems are very powerful but their true power lies in the command line. There is a lot that you can do with the help of
+ commands but can't otherwise (using GUI).
+
+In this article, we will find out about basic Linux commands that are used most frequently. Now, let's start from the beginning.
+Syntax
+
+The commands in Linux have the following $command options arguments
+
+The command is followed by options (optional of course) and a list of arguments. The options can modify the behavior of a command. The argumen
+ts may be files or directories or some other data on which the command acts. Every command might not need arguments. Some commands work with o
+r without them (e.g. ‘ls’ command).The options can be provided in two ways: full word options with -- (e.g. --help), or single letter options 
+with - (e.g. -a -b -c or multiple options, -abc).
+Linux Basic Commands.
+
+Let’s start with some simple commands.
+
+‘pwd’ command prints the absolute path to current working directory.
+student@T28:~/ajce/mca/rmca$ more -f file.txt
+
+38 Basic Linux Commands to Learn with Examples
+Updated October 29, 2018LINUX COMMANDS
+
+This article I will show you 38 basic Linux commands with examples that are frequently used to get you more familiar with Linux command line. Linux based Operating Systems are very powerful but their true power lies in the command line. There is a lot that you can do with the help of commands but can't otherwise (using GUI).
+
+In this article, we will find out about basic Linux commands that are used most frequently. Now, let's start from the beginning.
+Syntax
+
+The commands in Linux have the following $command options arguments
+
+
+The command is followed by options (optional of course) and a list of arguments. The options can modify the behavior of a command. The arguments may be files or directories or some other data on which the command acts. Every command might not need arguments. Some commands work with or without them (e.g. ‘ls’ command).The options can be provided in two ways: full word options with -- (e.g. --help), or single letter options with - (e.g. -a -b -c or multiple options, -abc).
+Linux Basic Commands.
+
+
+Let’s start with some simple commands.
+
+
+‘pwd’ command prints the absolute path to current working directory.
+student@T28:~/ajce/mca/rmca$ more -p file.txt
+
+
+38 Basic Linux Commands to Learn with Examples
+Updated October 29, 2018LINUX COMMANDS
+
+This article I will show you 38 basic Linux commands with examples that are frequently used to get you more familiar with Linux command line. 
+Linux based Operating Systems are very powerful but their true power lies in the command line. There is a lot that you can do with the help of
+ commands but can't otherwise (using GUI).
+
+In this article, we will find out about basic Linux commands that are used most frequently. Now, let's start from the beginning.
+Syntax
+
+The commands in Linux have the following $command options arguments
+
+
+The command is followed by options (optional of course) and a list of arguments. The options can modify the behavior of a command. The argumen
+ts may be files or directories or some other data on which the command acts. Every command might not need arguments. Some commands work with o
+r without them (e.g. ‘ls’ command).The options can be provided in two ways: full word options with -- (e.g. --help), or single letter options 
+with - (e.g. -a -b -c or multiple options, -abc).
+Linux Basic Commands.
+
+
+Let’s start with some simple commands.
+
+
+‘pwd’ command prints the absolute path to current working directory.
+student@T28:~/ajce/mca/rmca$ more -p file.txt
+
+
+
+
+
+
+
+
+
+
+
+
+
+38 Basic Linux Commands to Learn with Examples
+Updated October 29, 2018LINUX COMMANDS
+
+This article I will show you 38 basic Linux commands with examples that are frequently used to get you more familiar with Linux command line. 
+Linux based Operating Systems are very powerful but their true power lies in the command line. There is a lot that you can do with the help of
+ commands but can't otherwise (using GUI).
+
+In this article, we will find out about basic Linux commands that are used most frequently. Now, let's start from the beginning.
+Syntax
+
+The commands in Linux have the following $command options arguments
+
+
+The command is followed by options (optional of course) and a list of arguments. The options can modify the behavior of a command. The argumen
+ts may be files or directories or some other data on which the command acts. Every command might not need arguments. Some commands work with o
+r without them (e.g. ‘ls’ command).The options can be provided in two ways: full word options with -- (e.g. --help), or single letter options 
+with - (e.g. -a -b -c or multiple options, -abc).
+Linux Basic Commands.
+
+
+Let’s start with some simple commands.
+
+
+‘pwd’ command prints the absolute path to current working directory.
+student@T28:~/ajce/mca/rmca$ more file.txt
+
+38 Basic Linux Commands to Learn with Examples
+Updated October 29, 2018LINUX COMMANDS
+
+This article I will show you 38 basic Linux commands with examples that are frequently used to get you more familiar with Linux command line. 
+Linux based Operating Systems are very powerful but their true power lies in the command line. There is a lot that you can do with the help of
+ commands but can't otherwise (using GUI).
+
+In this article, we will find out about basic Linux commands that are used most frequently. Now, let's start from the beginning.
+Syntax
+
+The commands in Linux have the following $command options arguments
+
+
+The command is followed by options (optional of course) and a list of arguments. The options can modify the behavior of a command. The argumen
+ts may be files or directories or some other data on which the command acts. Every command might not need arguments. Some commands work with o
+r without them (e.g. ‘ls’ command).The options can be provided in two ways: full word options with -- (e.g. --help), or single letter options 
+with - (e.g. -a -b -c or multiple options, -abc).
+Linux Basic Commands.
+
+
+Let’s start with some simple commands.
+
+
+‘pwd’ command prints the absolute path to current working directory.
+student@T28:~/ajce/mca/rmca$ more -3 file.txt
+
+38 Basic Linux Commands to Learn with Examples
+Updated October 29, 2018LINUX COMMANDS
+student@T28:~/ajce/mca/rmca$ more -2 file.txt
+
+38 Basic Linux Commands to Learn with Examples
+student@T28:~/ajce/mca/rmca$ more -5 file.txt
+
+38 Basic Linux Commands to Learn with Examples
+Updated October 29, 2018LINUX COMMANDS
+
+This article I will show you 38 basic Linux commands with examples that are frequently used to get you more familiar with Linux command line. 
+student@T28:~/ajce/mca/rmca$ more +5 file.txt
+This article I will show you 38 basic Linux commands with examples that are frequently used to get you more familiar with Linux command line. 
+Linux based Operating Systems are very powerful but their true power lies in the command line. There is a lot that you can do with the help of
+ commands but can't otherwise (using GUI).
+
+In this article, we will find out about basic Linux commands that are used most frequently. Now, let's start from the beginning.
+Syntax
+
+The commands in Linux have the following $command options arguments
+
+
+The command is followed by options (optional of course) and a list of arguments. The options can modify the behavior of a command. The argumen
+ts may be files or directories or some other data on which the command acts. Every command might not need arguments. Some commands work with o
+r without them (e.g. ‘ls’ command).The options can be provided in two ways: full word options with -- (e.g. --help), or single letter options 
+with - (e.g. -a -b -c or multiple options, -abc).
+Linux Basic Commands.
+
+
+Let’s start with some simple commands.
+
+
+‘pwd’ command prints the absolute path to current working directory.
+student@T28:~/ajce/mca/rmca$ more +/some file.txt
+
+...skipping
+
+
+The command is followed by options (optional of course) and a list of arguments. The options can modify the behavior of a command. The argumen
+ts may be files or directories or some other data on which the command acts. Every command might not need arguments. Some commands work with o
+r without them (e.g. ‘ls’ command).The options can be provided in two ways: full word options with -- (e.g. --help), or single letter options 
+with - (e.g. -a -b -c or multiple options, -abc).
+
+38 Basic Linux Commands to Learn with Examples
+Updated October 29, 2018LINUX COMMANDS
+
+This article I will show you 38 basic Linux commands with examples that are frequently used to get you more familiar with Linux command line. 
+Linux based Operating Systems are very powerful but their true power lies in the command line. There is a lot that you can do with the help of
+ commands but can't otherwise (using GUI).
+
+In this article, we will find out about basic Linux commands that are used most frequently. Now, let's start from the beginning.
+Syntax
+
+The commands in Linux have the following $command options arguments
+
+
+The command is followed by options (optional of course) and a list of arguments. The options can modify the behavior of a command. The argumen
+ts may be files or directories or some other data on which the command acts. Every command might not need arguments. Some commands work with o
+r without them (e.g. ‘ls’ command).The options can be provided in two ways: full word options with -- (e.g. --help), or single letter options 
+with - (e.g. -a -b -c or multiple options, -abc).
+Linux Basic Commands.
+
+
+Let’s start with some simple commands.
+
+
+‘pwd’ command prints the absolute path to current working directory.
+student@T28:~/ajce/mca/rmca$ less file.txt
+student@T28:~/ajce/mca/rmca$ less file.txt
+student@T28:~/ajce/mca/rmca$ less-c  file.txt
+
+Command 'less-c' not found, did you mean:
+
+  command 'lessc' from deb node-less
+
+Try: apt install <deb name>
+
+student@T28:~/ajce/mca/rmca$ less -c  file.txt
+student@T28:~/ajce/mca/rmca$ less +3  file.txt
+student@T28:~/ajce/mca/rmca$ less +5  file.txt
+student@T28:~/ajce/mca/rmca$ less +2  file.txt
+student@T28:~/ajce/mca/rmca$ ls -la | less
+student@T28:~/ajce/mca/rmca$ 
+
